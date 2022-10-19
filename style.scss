@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 .container{
-    max-width: 1440px;
+    max-width: 1460px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -12,10 +15,15 @@
     padding-right: 20px;
 }
 .header{
-    background-color: #fff;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid black;
 
     &__content{
+        height: 64px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,39 +39,35 @@
         height: auto;
         display: flex;
         gap: 6px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        align-items: center;
     }
     &__image{
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
     &__logo:hover{
         cursor: pointer;
     }
 
     &__text{
-        font-size: 18px;
+        font-size: 17px;
         color: #FA0F00;
         font-weight: 700;
         font-family:Helvetica, sans-serif;
-        margin-top: 5px;
     }
     &__menu ul{
         display: flex;
         list-style: none;
-        gap: 18px;
     }
     &__menu ul li{
         font-family: Helvetica, sans-serif;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 13px;
         display: block;
     }
     &__menu ul li a{
         text-decoration: none;
         color: black;
-        padding: 15px;
+        padding: 24px 17px;
     }
     &__menu ul li a:hover{
         cursor:pointer;
@@ -76,9 +80,8 @@
         gap: 15px;
     }
     &__icon{
-        width: 20px;
-        height: 20px;
-
+        font-size: 17px;
+        transform: rotate(90deg);
     }
     &__right-content a{
         text-decoration: none;
@@ -94,5 +97,4 @@
         cursor: pointer;
         color: #2B9AF3;
     }
-
 }
