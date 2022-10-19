@@ -63,14 +63,16 @@ body {
   list-style: none;
 }
 .header__menu ul li {
-  font-family: Helvetica, sans-serif;
+  font-family: "Anek Telugu", sans-serif;
   font-size: 13px;
   display: block;
+  font-weight: 600;
 }
 .header__menu ul li a {
   text-decoration: none;
   color: black;
   padding: 24px 17px;
+  letter-spacing: 0.4px;
 }
 .header__menu ul li a:hover {
   cursor: pointer;
